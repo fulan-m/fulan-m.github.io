@@ -6,6 +6,12 @@
     <meta name="description" content="Portfolio of Mateus H. Fulan, Environmental Management student specializing in GIS and data science">
     <title>Mateus H. Fulan | GIS & Data Science Portfolio</title>
     <style>
+        /* Add this style to center the title in the browser tab */
+        head {
+            display: flex;
+            justify-content: center;
+        }
+        
         :root {
             --primary-color: #336699;
             --secondary-color: #474d54;
@@ -153,6 +159,31 @@
         .social-links a {
             margin: 0 0.5rem;
         }
+
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .github-btn:hover {
+            background-color: #254b73;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+
+        .github-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
         
         @media (max-width: 768px) {
             .container {
@@ -180,7 +211,7 @@
     <main id="main">
         <div class="container">
             <section id="about">
-                <h2>About Me</h2>
+                <h2>About me</h2>
                 <p>
                     Hello! I'm Mateus, currently an undergraduate student in Environmental Management and Analysis, 
                     based in São Carlos, São Paulo, Brazil. I specialize in data science and Geographic Information 
@@ -191,37 +222,26 @@
             </section>
 
             <section id="projects">
-                <h2>Featured Projects</h2>
+                <h2>Featured projects</h2>
                 <article class="project">
                     <h3>AraPresSão</h3>
                     <p>
                         A comprehensive analysis of land use/land cover influence over precipitation patterns in three 
-                        administrative regions of São Paulo state. This project utilized satellite imagery processing, 
-                        statistical modeling in R, and spatial analysis techniques to identify correlations between 
-                        vegetation cover and precipitation variability.
+                        administrative regions of São Paulo state. This project utilized pluviometric data from stations
+                        scattered across the regions, as well as CHIRPS precipitation estimates, alongside MapBiomas's
+                        land use/land cover data. The analysis was conducted using R and Python.
                     </p>
                     <div class="project-links">
-                        <a href="#" aria-label="View AraPresSão live demo">Live Demo</a>
-                        <a href="#" aria-label="View AraPresSão GitHub repository">GitHub Repository</a>
-                    </div>
-                </article>
-                
-                <article class="project">
-                    <h3>Urban Heat Island Analysis</h3>
-                    <p>
-                        An ongoing research project examining the relationship between urban green spaces and 
-                        temperature differentials in Brazilian cities using Google Earth Engine and Python for 
-                        geospatial analysis and visualization.
-                    </p>
-                    <div class="project-links">
-                        <a href="#" aria-label="View Urban Heat Island Analysis live demo">Live Demo</a>
-                        <a href="#" aria-label="View Urban Heat Island Analysis GitHub repository">GitHub Repository</a>
+                        <a href="https://github.com/fulan-m" target="_blank" rel="noopener noreferrer" class="github-btn" aria-label="GitHub repository">
+                            <img src="assets/github-mark.svg" alt="GitHub logo">
+                            View on GitHub
+                        </a>
                     </div>
                 </article>
             </section>
 
             <section id="skills">
-                <h2>Technical Skills</h2>
+                <h2>Technical skills</h2>
                 <div class="skills">
                     <span class="skill">
                         <img src="assets/Rlogo.svg" alt="R logo" class="skill-icon">
