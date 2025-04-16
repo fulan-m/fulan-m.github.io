@@ -10,12 +10,12 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
+            color: #000000;
+            background-color: #e9e9ea;
         }
         header {
-            background: #35424a;
-            color: #ffffff;
+            background: #474d54;
+            color: rgb(255, 255, 255);
             padding: 20px 0;
             text-align: center;
         }
@@ -35,7 +35,7 @@
             margin-top: 20px;
         }
         a {
-            color: #e8491d;
+            color: #80caff;
             text-decoration: none;
         }
         .project {
@@ -50,13 +50,21 @@
             flex-wrap: wrap;
             gap: 10px;
             margin: 20px 0;
+            align-items: center;
         }
         .skill {
-            background: #e8491d;
+            background: #336699;
             color: white;
             padding: 5px 10px;
             border-radius: 3px;
             font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .skill-icon {
+            height: 16px;
+            width: auto;
         }
     </style>
 </head>
@@ -102,12 +110,22 @@
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="skills">
-                    <span class="skill">HTML</span>
-                    <span class="skill">CSS</span>
-                    <span class="skill">JavaScript</span>
-                    <span class="skill">Git</span>
-                    <span class="skill">Responsive Design</span>
-                    <!-- Add more skills as needed -->
+                    <span class="skill">
+                        <img src="assets/Rlogo.svg" alt="R logo" class="skill-icon">
+                        R
+                    </span>
+                    <span class="skill">
+                        <img src="assets/python-two-snakes.svg" alt="Python logo" class="skill-icon">
+                        Python
+                    </span>
+                    <span class="skill">
+                        <img src="assets/earth-engine.png" alt="Google Earth Engine logo" class="skill-icon">
+                        Google Earth Engine
+                    </span>
+                    <span class="skill">
+                        <img src="javascript-logo-svgrepo-com.svg" alt="Leaflet logo" class="skill-icon">
+                        JavaScript
+                    </span>
                 </div>
             </section>
         </div>
@@ -115,13 +133,12 @@
 
     <footer>
         <div class="container">
-            <p>Contact me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Contact me at: <a href="mailto:mhfulan@gmail.com">mhfulan@gmail.com</a></p>
             <p>
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
-                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                <a href="https://github.com/fulan-m" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/mateus-henrique-fulan-7370092b4/" target="_blank">LinkedIn</a>
             </p>
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Mateus H. Fulan. All rights reserved.</p>
         </div>
     </footer>
 </body>
