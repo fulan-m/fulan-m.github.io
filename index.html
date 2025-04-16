@@ -1,7 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #main {
+            padding: 20px 0;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        a {
+            color: #e8491d;
+            text-decoration: none;
+        }
+        .project {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .skill {
+            background: #e8491d;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <h1>Mateus H. Fulan</h1>
+            <p>Student | Researcher </p>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <section id="about">
+                <h2>
+                    About me
+                </h2>
+                <p>
+                    Hello! I'm Mateus, currently a undergraduate in Environmental Management and Analysis, based in São Carlos, São Paulo, Brazil.
+                    I specialize mostly in data science and Geographic Information Systems (GIS), and have experience working with Python, R and 
+                    Google Earth Engine's JavaScript.
+                </p>
+            </section>
+
+            <section id="projects">
+                <h2>My projects</h2>
+                <div class="project">
+                    <h3>
+                        AraPresSão
+                    </h3>
+                    <p>
+                        Land use/land cover influence over precipitation on three administrative regions in São Paulo.
+                    </p>
+                    <a href="#">Live Demo</a> | <a href="#">GitHub Repository</a>
+                </div>
+                <div class="project">
+                    <h3>Project Title 2</h3>
+                    <p>Description of your project. What it does, technologies used, and what you learned.</p>
+                    <a href="#">Live Demo</a> | <a href="#">GitHub Repository</a>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">Responsive Design</span>
+                    <!-- Add more skills as needed -->
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Contact me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
+                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+            </p>
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
