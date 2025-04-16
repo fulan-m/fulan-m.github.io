@@ -3,68 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <meta name="description" content="Portfolio of Mateus H. Fulan, Environmental Management student specializing in GIS and data science">
+    <title>Mateus H. Fulan | GIS & Data Science Portfolio</title>
     <style>
+        :root {
+            --primary-color: #336699;
+            --secondary-color: #474d54;
+            --accent-color: #80caff;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #000000;
-            background-color: #e9e9ea;
+            color: var(--text-color);
+            background-color: var(--light-bg);
         }
+        
         header {
-            background: #474d54;
-            color: rgb(255, 255, 255);
-            padding: 20px 0;
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 2rem 0;
             text-align: center;
         }
+        
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
         }
+        
         #main {
-            padding: 20px 0;
+            padding: 2rem 0;
         }
+        
         footer {
-            background: #35424a;
-            color: #ffffff;
+            background: var(--secondary-color);
+            color: var(--white);
             text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
         }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
         a {
-            color: #80caff;
+            color: var(--accent-color);
             text-decoration: none;
+            transition: color 0.3s ease;
         }
+        
+        a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+        
         .project {
-            background: #fff;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: var(--white);
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
         }
+        
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        
         .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin: 20px 0;
-            align-items: center;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
         }
+        
         .skill {
-            background: #336699;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 0.9em;
-            display: flex;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
         }
+        
+        .skill:hover {
+            background: #254b73;
+            transform: scale(1.05);
+        }
+        
         .skill-icon {
-            height: 16px;
+            height: 1rem;
             width: auto;
+        }
+        
+        h1, h2, h3 {
+            margin-top: 0;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .project-links {
+            margin-top: 1rem;
+        }
+        
+        .project-links a {
+            margin-right: 1rem;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            margin: 0 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
         }
     </style>
 </head>
@@ -72,47 +173,59 @@
     <header>
         <div class="container">
             <h1>Mateus H. Fulan</h1>
-            <p>Student | Researcher </p>
+            <p>Environmental Management Student | GIS & Data Science Researcher</p>
         </div>
     </header>
 
-    <section id="main">
+    <main id="main">
         <div class="container">
             <section id="about">
-                <h2>
-                    About me
-                </h2>
+                <h2>About Me</h2>
                 <p>
-                    Hello! I'm Mateus, currently a undergraduate in Environmental Management and Analysis, based in São Carlos, São Paulo, Brazil.
-                    I specialize mostly in data science and Geographic Information Systems (GIS), and have experience working with Python, R and 
-                    Google Earth Engine's JavaScript.
+                    Hello! I'm Mateus, currently an undergraduate student in Environmental Management and Analysis, 
+                    based in São Carlos, São Paulo, Brazil. I specialize in data science and Geographic Information 
+                    Systems (GIS), with professional experience working with Python, R, and Google Earth Engine's 
+                    JavaScript API. My research focuses on the intersection of environmental analysis and geospatial 
+                    technologies to solve real-world ecological challenges.
                 </p>
             </section>
 
             <section id="projects">
-                <h2>My projects</h2>
-                <div class="project">
-                    <h3>
-                        AraPresSão
-                    </h3>
+                <h2>Featured Projects</h2>
+                <article class="project">
+                    <h3>AraPresSão</h3>
                     <p>
-                        Land use/land cover influence over precipitation on three administrative regions in São Paulo.
+                        A comprehensive analysis of land use/land cover influence over precipitation patterns in three 
+                        administrative regions of São Paulo state. This project utilized satellite imagery processing, 
+                        statistical modeling in R, and spatial analysis techniques to identify correlations between 
+                        vegetation cover and precipitation variability.
                     </p>
-                    <a href="#">Live Demo</a> | <a href="#">GitHub Repository</a>
-                </div>
-                <div class="project">
-                    <h3>Project Title 2</h3>
-                    <p>Description of your project. What it does, technologies used, and what you learned.</p>
-                    <a href="#">Live Demo</a> | <a href="#">GitHub Repository</a>
-                </div>
+                    <div class="project-links">
+                        <a href="#" aria-label="View AraPresSão live demo">Live Demo</a>
+                        <a href="#" aria-label="View AraPresSão GitHub repository">GitHub Repository</a>
+                    </div>
+                </article>
+                
+                <article class="project">
+                    <h3>Urban Heat Island Analysis</h3>
+                    <p>
+                        An ongoing research project examining the relationship between urban green spaces and 
+                        temperature differentials in Brazilian cities using Google Earth Engine and Python for 
+                        geospatial analysis and visualization.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Urban Heat Island Analysis live demo">Live Demo</a>
+                        <a href="#" aria-label="View Urban Heat Island Analysis GitHub repository">GitHub Repository</a>
+                    </div>
+                </article>
             </section>
 
             <section id="skills">
-                <h2>Skills</h2>
+                <h2>Technical Skills</h2>
                 <div class="skills">
                     <span class="skill">
                         <img src="assets/Rlogo.svg" alt="R logo" class="skill-icon">
-                        R
+                        R Programming
                     </span>
                     <span class="skill">
                         <img src="assets/python-two-snakes.svg" alt="Python logo" class="skill-icon">
@@ -126,20 +239,38 @@
                         <img src="assets/javascript-logo-svgrepo-com.svg" alt="JavaScript logo" class="skill-icon">
                         JavaScript
                     </span>
+                    <span class="skill">
+                        <img src="assets/QGIS_logo_minimal.svg.png" alt="GIS icon" class="skill-icon">
+                        GIS Analysis
+                    </span>
                 </div>
             </section>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>Contact me at: <a href="mailto:mhfulan@gmail.com">mhfulan@gmail.com</a></p>
-            <p>
-                <a href="https://github.com/fulan-m" target="_blank">GitHub</a> |
-                <a href="https://www.linkedin.com/in/mateus-henrique-fulan-7370092b4/" target="_blank">LinkedIn</a>
-            </p>
-            <p>&copy; 2025 Mateus H. Fulan. All rights reserved.</p>
+            <div class="footer-content">
+                <p>Contact me at: <a href="mailto:mhfulan@gmail.com">mhfulan@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/fulan-m" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/mateus-henrique-fulan-7370092b4/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        LinkedIn
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate profile">
+                        ResearchGate
+                    </a>
+                </div>
+                <p>&copy; <span id="current-year">2025</span> Mateus H. Fulan. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
