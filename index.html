@@ -35,7 +35,27 @@
             background: var(--secondary-color);
             color: var(--white);
             padding: 2rem 0;
-            text-align: center;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--white);
+            box-shadow: var(--shadow);
+        }
+        
+        .header-text {
+            text-align: right;
+            flex: 1;
+            padding-left: 2rem;
         }
         
         .container {
@@ -190,6 +210,17 @@
                 width: 90%;
             }
             
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-text {
+                text-align: center;
+                padding-left: 0;
+                margin-top: 1rem;
+            }
+            
             h1 {
                 font-size: 2rem;
             }
@@ -203,8 +234,13 @@
 <body>
     <header>
         <div class="container">
-            <h1>Mateus H. Fulan</h1>
-            <p>Environmental Management Student | GIS & Data Science Researcher</p>
+            <div class="header-content">
+                <img src="profile.png" alt="Mateus H. Fulan profile photo" class="profile-image">
+                <div class="header-text">
+                    <h1>Mateus H. Fulan</h1>
+                    <p>Environmental Management Student | GIS & Data Science Researcher</p>
+                </div>
+            </div>
         </div>
     </header>
 
